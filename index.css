@@ -1,0 +1,100 @@
+/* CSS styles */
+.heading{
+  position: absolute;
+  z-index: 100;
+  font-family: Times, sans-serif;
+  background-color: #13add4;
+  border: .2rem outset #953053;
+  min-width: 400px;
+  min-height: 85px;
+  padding: 5px;
+  padding-top: 2px;
+  text-align: auto;
+  left:0%;
+}
+
+h1 {
+  top: 0px;
+  position: absolute;
+  font-size: 25pt;
+}  
+
+p {
+  position: absolute;
+  top: 50px;
+  font-size: 10pt;
+}
+
+.settingsbutton{
+  border: none;
+  background-color: #13add4;
+  cursor: crosshair;
+}
+.settings{
+  background-color: #13add4;
+  position: absolute;
+  z-index: 100;
+  float: right;
+  border: .2rem outset #953053;
+  right: 0%;
+  padding: 0;
+  max-height: 50px;
+}
+
+.settingscontent{
+  color:#13add4;
+  display: none;
+  right: 0%;
+  position: absolute;
+  margin-top: 5%;
+  min-width: 160px;
+  z-index: 100;
+}
+
+.settingsbutton:focus .settingscontent {
+  display: block !important;
+}
+
+body{
+  cursor: cell;
+  margin: 0;
+  background: rgb(1,29,37);
+}
+
+#canvas {
+  padding: 0;
+  position: absolute;
+  background: rgb(1,29,37);
+  background: #953053; 
+  height: 100%;
+}
+
+::selection {
+  background: #953053;
+}
+
+.mysliders{
+  color: #000000;
+  accent-color: #13add4;
+}
+
+input{
+  padding: 0.4rem;
+}
+
+.run{
+  position: absolute;
+  bottom: 15px;
+  z-index: 100;
+  right: 15px;
+  background: #13add4;
+  border: outset #953053;
+}
+
+.run:hover .run{
+  background: #3dbbdb;
+}
+
+.show {
+  display: block;
+}

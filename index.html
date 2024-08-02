@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N-flake chaos game</title>
+</head>
+  
+<body>
+  <div class="heading">
+      <h1>N-flake Chaos Game</h1>
+      <p>N-flake fractals with adjustable number of iterations</p>
+  </div>
+<div class="settings">
+  <div class="settingslabel">
+    <button class="settingsbutton">Settings</button>
+    <div class="settingscontent">
+      <input type="range" min="3" max="42" step="1" id="vertices" name="vertex count" class="mysliders"/>
+      <h2><span id="verticesout"></span>-flake</h2>
+      <input type="range" min="0" max="10000" step="10" id="iterations" name="desired iterations" class="mysliders"/>
+      <h2><span id="iterationsout"></span> iterations</h2>
+    </div>
+  </div>
+
+</div>
+<div>
+ <input type="submit" value="Start Recursion" class="run"/>
+</div>
+<canvas id="canvas"></canvas>
+<script src="./index.js"></script>
+</body>
+</html>
