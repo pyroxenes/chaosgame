@@ -14,18 +14,12 @@ settingsbutton.onclick = () => {
 
     /** @type {HTMLCanvasElement} */
     const canvas=document.getElementById("canvas");
-    const size = canvas.getBoundingClientRect();
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
     const ctx=canvas.getContext("2d");
     const halfcanvheight=canvas.height * .5;
     const halfcanvwidth=canvas.width * .5;
-    ctx.fillStyle = "#3dbbdb";
-    ctx.fillRect(halfcanvwidth, halfcanvheight, 1, 1);
     const r = canvas.width < canvas.height ? (canvas.width / 8 )* 3 : (canvas.height / 8) * 3;
-
-
 
     const vertexcount = document.getElementById("vertices");
     const vertexout = document.getElementById("verticesout");
@@ -59,10 +53,6 @@ settingsbutton.onclick = () => {
     run.onclick = () => {
         ctx.fillStyle = "#3dbbdb";
         ctx.fillRect(halfcanvwidth, halfcanvheight, 1, 1);
-        const r = canvas.width < canvas.height ? (canvas.width / 8 )* 3 : (canvas.height / 8) * 3;
-        ctx.strokeStyle = "black";
-        ctx.arc(halfcanvwidth, halfcanvheight, r, 0, Math.PI * 2);
-        ctx.stroke();
     }
 
 
