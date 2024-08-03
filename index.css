@@ -99,13 +99,15 @@ input{
   display: block;
 }
 
-@media (width <= 400px) {
+@media all and (orientation:landscape) {
 
-.header{ 
+.heading{ 
   max-width: 100%;
+  min-width: 0%;
   }
 
 .settings{
   top: 85px;
   }
+  
 }
