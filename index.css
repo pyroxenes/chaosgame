@@ -1,4 +1,7 @@
 /* CSS styles */
+-webkit-scrollbar {
+  display: none;
+}
 .heading{
   position: absolute;
   z-index: 100;
@@ -13,14 +16,48 @@
   left:0%;
 }
 
+.card{
+  width: 60%;
+  z-index: 100;
+  font-family: Times, sans-serif;
+  background-color: #13add4;
+  border: .2rem outset #953053;
+  min-width: 200px;
+  height: 400px;
+  padding: 1%;
+  margin-top: 5%;
+  padding-top: 2px;
+}
+.leftcolumn{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  float: left;
+}
+.rightcolumn{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  clear: both;
+  float: right;
+}
+
+.row:after{
+  display: table;
+  clear: both;  
+}
+
+.link{
+  color: #953053;
+  text-decoration: underline;
+}
+
 h1 {
   top: 0px;
-  position: absolute;
   font-size: 25pt;
 }  
 
 p {
-  position: absolute;
   top: 50px;
   font-size: 10pt;
 }
@@ -37,7 +74,7 @@ p {
   float: right;
   border: .2rem outset #953053;
   right: 0%;
-  padding: 0;
+  padding: 3;
   max-height: 50px;
 }
 
@@ -51,6 +88,7 @@ p {
   z-index: 100;
 }
 
+
 .settingsbutton:focus .settingscontent {
   display: block !important;
 }
@@ -58,7 +96,12 @@ p {
 body{
   cursor: cell;
   margin: 0;
-  background: rgb(1,29,37);
+  background: #953053;
+  min-height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
 }
 
 #canvas {
@@ -113,6 +156,6 @@ input{
 }
 
   /* _.,      _.._
-    (.-.`._,'(,-'""`|\`-/|
+    (.-.`._,'(,-'""`|\--/|
         `-.-, \ )-' (=^w^=)
   pyroxenes  `- -'  \_' '_/  */
