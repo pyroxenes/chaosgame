@@ -23,10 +23,11 @@
   background-color: #13add4;
   border: .2rem outset #953053;
   min-width: 200px;
-  height: 400px;
+  height: auto;
   padding: 1%;
   margin-top: 5%;
   padding-top: 2px;
+  float: right;
 }
 .leftcolumn{
   display: flex;
@@ -148,8 +149,8 @@ input{
   width: 95%;
   min-width: 0%;
   }
-
-.settings{
+/* todo: uhhhh make this go bottom left idiot dumbass stupidhead OKAY????? */
+.settings{ 
   top: 98px;
   }
   
