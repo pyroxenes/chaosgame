@@ -87,7 +87,7 @@ run.onclick = () => {
             const yVal = (settings.point[randnumber].y-settings.point[settings.point.length-1].y)*settings.ratio + settings.point[settings.point.length-1].y;
             settings.point.push({x: xVal,y: yVal});
         }
-        // console.log(settings.point)
+        console.log(settings.point)
         ctx.fillStyle = "#3dbbdb";
         ctx.fillRect(settings.point[settings.point.length-1].x + halfcanvwidth, settings.point[settings.point.length-1].y + halfcanvheight, 1, 1);
     }

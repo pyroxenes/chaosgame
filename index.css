@@ -29,6 +29,18 @@
   padding-top: 2px;
   float: right;
 }
+
+.headinginvisspacer{
+  font-family: Times, sans-serif;
+  background-color: #953053;
+  color: #953053;
+  min-width: 400px;
+  min-height: 85px;
+  padding: 5px;
+  padding-top: 2px;
+  text-align: auto;
+  left:0%;
+}
 .leftcolumn{
   display: flex;
   flex-direction: column;
