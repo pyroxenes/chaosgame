@@ -145,6 +145,7 @@ input{
   right: 15px;
   background: #13add4;
   border: outset #953053;
+  color: #000000;
 }
 
 .run:hover .run{
@@ -167,6 +168,18 @@ input{
   }
   
 }
+
+@media screen and (max-width: 1000px) {
+
+  .leftcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+
+  .rightcolumn {
+   width: 100%;
+   padding:0;
+  }
 
   /* _.,      _.._
     (.-.`._,'(,-'""`|\--/|
