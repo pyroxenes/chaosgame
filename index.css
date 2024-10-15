@@ -145,6 +145,7 @@ input{
   right: 15px;
   background: #13add4;
   border: outset #953053;
+  border-radius: 0%;
   color: #000000;
 }
 
